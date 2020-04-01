@@ -1,0 +1,48 @@
+{
+    "name": "Cantela",
+    "version": "1.0.0",
+    "description": "Cantela is fastest, largest and most robust desktop application which streams music as well as video available on YouTube without any ads built using Electron.",
+    "main": "index.js",
+    "dependencies": {
+        "discord-rich-presence": "0.0.8",
+        "discord-rpc": "^3.0.2",
+        "electron-updater": "^4.1.2",
+        "mousetrap": "^1.6.3",
+        "opn": "^6.0.0",
+        "request": "^2.88.0",
+        "request-progress": "^3.0.0",
+        "request-promise": "^4.2.4"
+    },
+    "devDependencies": {
+        "electron": "^5.0.8",
+        "electron-builder": "^21.1.5"
+    },
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder",
+        "build-linux": "electron-builder --linux",
+        "build-all": "electron-builder -mwl"
+    },
+    "build": {
+        "win": {
+            "target": [{
+                "target": "nsis",
+                "arch": [
+                    "x64",
+                    "ia32"
+                ]
+            }]
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kritik123/Cantela.git"
+    },
+    "author": "kritik123",
+    "email": "",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/kritik123/Cantela/issues"
+    },
+    "homepage": "https://github.com/kritik123/Cantela#readme"
+}
